@@ -1,0 +1,40 @@
+GET http://localhost:4000/api/v1/example?limit=2&page=1
+
+###
+
+GET http://localhost:4000/api/v1/example/5f3cf2ff2a5bc819ad6bd2fb
+
+###
+
+POST http://localhost:4000/api/v1/example HTTP/1.1
+content-Type: application/json
+
+{
+    "example": "created by joe - vscode"
+}
+
+###
+
+PUT  http://localhost:4000/api/v1/example/5f66e81fc6b9b5096a25471a
+content-Type: application/json
+
+{
+    "example": "Update by joe - vscode"
+}
+
+###
+
+DELETE http://localhost:4000/api/v1/example/5f66eb768908d80b289bf5de
+
+###
+
+GET http://localhost:4000/api/v1/example/herencie
+
+# Example
+POST https://example.com/comments HTTP/1.1
+Content-Type: multipart/form-data
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
